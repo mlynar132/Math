@@ -24,16 +24,13 @@ class MATH_API AAssigmentCube : public AActor
 	GENERATED_BODY()
 
 public:
-	// Sets default values for this actor's properties
 	AAssigmentCube();
 	virtual bool ShouldTickIfViewportsOnly() const override;
 
 protected:
-	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:
-	// Called every frame
+	public:
 	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY(EditAnywhere)
